@@ -163,6 +163,16 @@ var saying = "Hello World!";
 alert(saying);
 ```
 
+Variables can be overwritten by referring to them without the `var` keyword:
+
+```javascript
+var saying = "Hello World!";
+
+saying = "Hey Arun!";
+
+alert(saying); //Gives us "Hey Arun!"
+```
+
 #####Arrays
 
 Arrays allow us to be able to store a set of data in one place. Let's say we want to look up information about a particular user. An array of a user's information may look like this:

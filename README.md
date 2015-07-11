@@ -1,4 +1,4 @@
-#Code for Non Coders
+#Programming for Non Programmers
 
 ##Installation
 - Install [Node JS](http://nodejs.org/)

@@ -18,7 +18,7 @@ $(document).on("keyup", function(event) {
 
 	if (lockedIn === true) {
 		wordsTypes.push(String.fromCharCode(event.which));
-		
+
 		var result = wordsTypes.join("");
 
 		if (result === "CHIRP") {
@@ -39,8 +39,21 @@ $(document).on("click", "#cancel-chirp-button", function() {
 	});
 });
 
-// $(document).ready(function() {
-// 	setTimeout(function() {
-// 		$("#instructions-modal").modal("show");
-// 	}, 1000);
-// });
+$(document).on("click", ".edit-chirp-button", function(event) {
+	event.preventDefault();
+
+	//Store the bird a user selected to LS
+	localStorage.setItem("bird_selected", $(this).attr("data-bird"));
+
+	//Send the user to the ultimate destination
+	window.location.href = $(this).attr("href");
+});
+
+$(document).ready(function() {
+
+	//Show correct bird on edit page
+	if ($("#edit-bird").length > 0) {
+		$("#edit-bird").attr("src", "/img/birds/bird" + localStorage.getItem("bird_selected") + ".png");
+	}
+
+});

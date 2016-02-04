@@ -23,7 +23,7 @@
 
 <div class="container margin-top-10">
 	<div id="chirp-wrapper" class="border-radius-10">
-		<form method="post" action="/new">
+		<form method="post" action="/chirps">
 			<div>
 				<textarea id="chirp-text" name="chirp" class="form-control" placeholder="You can chirp here. Make sure it's less than 140 characters!"></textarea>
 			</div>
@@ -36,43 +36,28 @@
 </div>
 
 <div class="container margin-top-10">
-	<% for (var i = 0; i < chirps.length; i++) { 
-		var randomBird = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
-	%>
-		<div class="one-chirp border-radius-10">
-			<div class="row">
-				<div class="col-sm-2">
-					<img src="/img/birds/bird<%= randomBird %>.png" class="img-responsive" />
-				</div>
-				<div class="col-sm-10">
-					<div class="margin-top-20">
-						<%= chirps[i].chirp %>
+	<% if (typeof chirps !== "undefined") { %>
+		<% for (var i = 0; i < chirps.length; i++) {
+			var randomBird = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+		%>
+			<div class="one-chirp border-radius-10">
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="/img/birds/bird<%= randomBird %>.png" class="img-responsive" />
 					</div>
-					<div class="margin-top-10 txt-right">
-						<a href="/edit/<%= chirps[i].id %>/<%= randomBird %>" class="btn btn-primary">Edit Chirp</a>
+					<div class="col-sm-10">
+						<div class="margin-top-20">
+							<%= chirps[i].chirp %>
+						</div>
+						<div class="margin-top-10 txt-right">
+							<a data-bird="<%= randomBird %>" href="/chirps/<%= chirps[i].id %>/edit" class="btn btn-primary edit-chirp-button">Edit Chirp</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		<% } %>
 	<% } %>
 </div>
-
-<div id="instructions-modal" class="modal fade">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				<h4 class="modal-title">How to Use</h4>
-			</div>
-			<div class="modal-body">
-				To get started, hold down shift and type "CHIRP". Hold shift and type "NAH" if you want to cancel your chirp.
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" data-dismiss="modal">Cool Beans</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 

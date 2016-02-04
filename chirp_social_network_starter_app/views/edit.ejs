@@ -24,9 +24,9 @@
 <div class="container margin-top-10">
 	<div class="one-chirp border-radius-10">
 		<div class="row">
-			<form method="post" action="/edit/<%= chirp.id %>?_method=put">
+			<form method="post" action="/chirps/<%= chirp.id %>?_method=put">
 				<div class="col-sm-1">
-					<img src="/img/birds/bird<%= bird %>.png" class="img-responsive" />
+					<img id="edit-bird" src="" class="img-responsive" />
 				</div>
 				<div class="col-sm-11">
 					<div class="margin-top-10">
@@ -37,7 +37,7 @@
 					</div>
 				</div>
 			</form>
-			<form method="post" action="/delete/<%= chirp.id %>?_method=delete" class="txt-right">
+			<form method="post" action="/chirps/<%= chirp.id %>?_method=delete" class="txt-right">
 				<button name="deletechirp" value="delete-chirp" class="btn btn-danger">Delete Chirp</button>
 			</form>
 		</div>
@@ -52,6 +52,8 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<script src="/js/chirp_main.js"></script>
 
 </body>
 

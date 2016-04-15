@@ -226,5 +226,5 @@ for (var i = 0; i < 20; i++) {
 ```
 
 ## JavaScript Game Lab
-- [TicTacToe](https://github.com/arsood/TicTacToe)
-- [Memory Game](https://github.com/arsood/Memory)
+- TicTacToe
+- Memory Game

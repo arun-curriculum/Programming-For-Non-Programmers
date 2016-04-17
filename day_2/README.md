@@ -1,10 +1,5 @@
 # Programming for Non Programmers
 
-## Installation
-- Install [Node JS](http://nodejs.org/)
-- Install [Nodemon](https://github.com/remy/nodemon)
-- Download this repository for all class files.
-
 ## Introduction to Back End Development
 
 ##### Introduction
@@ -56,6 +51,9 @@ Sample array:
 How can we find which place "n" is located?
 
 Bonus: Solve the algorithm with a JavaScript function. You will have to look up [if-else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) to accomplish this.
+
+## Installation
+- Install [Node JS](http://nodejs.org/)
 
 ## NodeJS
 - We will be using NodeJS to understand how the backend interacts with the frontend.

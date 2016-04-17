@@ -52,7 +52,7 @@ How can we find which place "n" is located?
 
 Bonus: Solve the algorithm with a JavaScript function. You will have to look up [if-else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) to accomplish this.
 
-P.S. The JavaScript function [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) if off-limits for this exercise!
+P.S. The JavaScript function [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) is off-limits for this exercise!
 
 ## Installation
 - Install [Node JS](http://nodejs.org/)

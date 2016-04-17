@@ -74,7 +74,7 @@ Bonus: Solve the algorithm with a JavaScript function. You will have to look up 
 
 ## Chirp! Social Network
 - We will be learning some basic node in the context of a small Twitter clone called Chirp!
-- You can find the starter application [here](chirp_social_network_starter_app/).
+- Please refer to the project linked above.
 
 ## Overview of Mobile App Development
 - Overview of iOS platform and XCode

@@ -125,10 +125,28 @@ heroku create
 heroku apps:rename newname
 ```
 
-##### Step 3: Deploy application to Heroku
+##### Step 3: Add the Postgresql addon to Heroku
+
+- Visit your Heroku dashboard and add the Postgresql addon.
+
+##### Step 4: Deploy application to Heroku
 
 ```bash
 git push heroku master
+```
+
+##### Step 5: Install software on Heroku
+
+```bash
+heroku run bash
+
+npm install sequelize-cli -g
+```
+
+##### Step 6: Create chirp database on Heroku
+
+```bash
+sequelize db:migrate
 ```
 
 ## Overview of Mobile App Development

@@ -1,5 +1,24 @@
 # Programming for Non Programmers
 
+## Installation
+- Install [Node JS](http://nodejs.org/)
+- Install command line tools: 
+
+##### Mac:
+
+```bash
+xcode-select --install
+```
+
+##### Windows:
+
+- Visit the [Windows Git installation page](https://git-scm.com/downloads).
+
+## Setup
+
+- Create an account on [Heroku.com](https://www.heroku.com/).
+- Install the [Heroku toolbelt](https://toolbelt.heroku.com/).
+
 ## Introduction to Back End Development
 
 ##### Introduction
@@ -54,9 +73,6 @@ Bonus: Solve the algorithm with a JavaScript function. You will have to look up 
 
 P.S. The JavaScript function [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) is off-limits for this exercise!
 
-## Installation
-- Install [Node JS](http://nodejs.org/)
-
 ## NodeJS
 - We will be using NodeJS to understand how the backend interacts with the frontend.
 - NodeJS enables us to use JavaScript on the server-side.
@@ -76,15 +92,6 @@ P.S. The JavaScript function [indexOf](https://developer.mozilla.org/en-US/docs/
 - We will be learning some basic node in the context of a small Twitter clone called Chirp!
 - Please refer to the project linked above.
 
-## Overview of Mobile App Development
-- Overview of iOS platform and XCode
-- Objective C
-- Swift
-- Overview of Android platform and ADT
-- Java
-- Hybrid apps with jQuery Mobile, Phonegap, and Ionic.
-- API call structure
-
 ## Introduction to Version Control Systems
 - [Git](http://git-scm.com/) and [GitHub](https://github.com/)
 - [SVN](https://subversion.apache.org/)
@@ -93,6 +100,45 @@ P.S. The JavaScript function [indexOf](https://developer.mozilla.org/en-US/docs/
 ## Cloud Platforms and Deployment Infrastructure
 - [Amazon Web Services (AWS)](http://aws.amazon.com/)
 - [Rackspace](http://www.rackspace.com/)
+- [Heroku](https://www.heroku.com/)
+
+## Chirp! Deployment
+
+- We will be deploying your Chirp! application to Heroku using Git.
+- Here are the steps we will be following:
+
+##### Step 1: Add project to Git
+
+```bash
+git init
+
+git add -A
+
+git commit -m "Deploying site"
+```
+
+##### Step 2: Create a new Heroku project and rename it
+
+```bash
+heroku create
+
+heroku apps:rename newname
+```
+
+##### Step 3: Deploy application to Heroku
+
+```bash
+git push heroku master
+```
+
+## Overview of Mobile App Development
+- Overview of iOS platform and XCode
+- Objective C
+- Swift
+- Overview of Android platform and ADT
+- Java
+- Hybrid apps with jQuery Mobile, Phonegap, and Ionic.
+- API call structure
 
 ## Design Your Own Project Lab
 - In this lab you will have the chance to practice your conceptual skills to virtually create the next big startup.

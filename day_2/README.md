@@ -119,6 +119,14 @@ git commit -m "Deploying site"
 
 ##### Step 2: Create a new Heroku project and rename it
 
+- If you haven't logged into Heroku already, you can do so with the command below:
+
+```bash
+heroku login
+```
+
+- Create the Heroku project
+
 ```bash
 heroku create
 

@@ -1,6 +1,7 @@
 # Programming for Non Programmers
 
 ### [Day 1](day_1/)
+
 - Overview of web development cycle
 - Introduction to UX design
 - Introduction to HTML
@@ -8,6 +9,7 @@
 - JavaScript basics
 
 ### [Day 2](day_2/)
+
 - Introduction to back end development
 - Algorithm basics
 - NodeJS overview

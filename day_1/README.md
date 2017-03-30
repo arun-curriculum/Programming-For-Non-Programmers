@@ -1,17 +1,20 @@
 # Programming for Non Programmers
 
 ## Share Out
+
 - What is programming and why should I care?
 - Should I learn programming or should I hire someone else to do it?
 - Come up with two ideas and discuss how technology could make them a reality.
 
 ## Typical Web Development Cycle
+
 1. User experience design
 2. Information architecture
 3. Visual design
 4. Development
 
 ## Introduction to UX Design
+
 - Two well-known tools:
 	- Omnigraffle
 	- Balsamiq
@@ -19,6 +22,7 @@
 - It is heavy on research and flow design.
 
 ## UX Design Lab
+
 - Take a few minutes to research an online business of your choice.
 - Write down at least 5 examples of good UX design, and at least 2 examples of bad UX design / improvements for the product.
 - Present to the class your findings.
@@ -26,15 +30,18 @@
 ## Introduction to HTML and CSS
 
 ##### HTML and CSS
+
 - HTML and CSS work together to create the front end structure and design.
 - Front end frameworks and the grid system.
 
-##### Tags:
+##### Tags
+
 - Tags allow you to set up your document's structure.
 - Attributes allow you to add additional information to a tag.
 - Attributes also allow you to bridge the gap between HTML and CSS.
 
-##### Div:
+##### Div
+
 - Divs are like empty rectangles.
 - They help organize content on the page.
 
@@ -44,7 +51,8 @@
 </div>
 ```
 
-##### Input:
+##### Input
+
 - Inputs allow users to enter data to be saved to a database.
 - They come in different forms to facilitate the specific data entry type.
 
@@ -52,7 +60,8 @@
 <input type="text" class="form-control" />
 ```
 
-##### Select list:
+##### Select list
+
 - Select lists allow users to select options from a dropdown menu.
 
 ```html
@@ -61,7 +70,8 @@
 </select>
 ```
 
-##### Button:
+##### Button
+
 - Buttons are HTML elements that give users the ability to submit the data entered as well as transition to new pages.
 
 ```html
@@ -69,6 +79,7 @@
 ```
 
 ## CSS Stylesheets
+
 - CSS stylesheets provide the look and feel of the website.
 - There are two main ways of referencing CSS in the HTML so you can apply styles - classes and IDs.
 - Consider this HTML:
@@ -111,6 +122,7 @@ CSS
 > **The main difference between classes and IDs is that classes can be used multiple times in the HTML document whereas IDs should only be used once.**
 
 ##### Linking CSS with HTML
+
 - In order to run external CSS you need to link it to the HTML. This usually goes in the `head` tag:
 
 ```html
@@ -118,6 +130,7 @@ CSS
 ```
 
 ##### Linking JS with HTML
+
 - JavaScript enables interaction with the page.
 - In order to run external JS you need to link it to the HTML. This usually goes before the closing `body` tag:
 
@@ -126,7 +139,8 @@ CSS
 ```
 
 ## HTML Markup Lab
-- Please refer to the project linked above.
+
+- Please refer to [the project linked here.](https://github.com/arun-projects/HTML-Form)
 
 ## Introduction to JavaScript
 
@@ -222,5 +236,6 @@ for (var i = 0; i < 20; i++) {
 ```
 
 ## JavaScript Game Lab
-- TicTacToe
-- Memory Game
+
+- [TicTacToe](https://github.com/arun-projects/TicTacToe)
+- [Memory Game](https://github.com/arun-projects/Memory)

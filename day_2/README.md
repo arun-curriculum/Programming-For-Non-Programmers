@@ -71,7 +71,9 @@ Sample array:
 [1, 44, 23, 5, "a", "b", "n", 87, 7]
 ```
 
-How can we find which place "n" is located?
+How can we find which place "n" is located? How about 44?
+
+You may benefit from writing "pseudocode" to give you an idea of how your algorithm should work: [guide here](http://users.csc.calpoly.edu/~jdalbey/SWE/pdl_std.html)
 
 Bonus: Solve the algorithm with a JavaScript function. You will have to look up [if-else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) to accomplish this.
 

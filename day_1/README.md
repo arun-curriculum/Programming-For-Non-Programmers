@@ -132,10 +132,10 @@ CSS
 ##### Linking JS with HTML
 
 - JavaScript enables interaction with the page.
-- In order to run external JS you need to link it to the HTML. This usually goes before the closing `body` tag:
+- In order to run external JS you need to link it to the HTML. This usually goes in the `head` tag.
 
 ```html
-<script src="js/app.js"></script>
+<script src="app.js"></script>
 ```
 
 ## HTML Markup Lab
